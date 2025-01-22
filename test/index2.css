@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background-size: cover;
+    background-repeat: none;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 0 20px 0;
+    background-image: url('background.webp');
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+}
+
+#left {
+    margin: 0 0 0 0;
+}
+
+#right {
+    width: 600px;
+    min-height: 50vh;
+}
+
+#bottom {
+    min-height: 80vh !important;
+    min-width: 100vw;
+    margin: 0 auto;
+    position: relative;
+}
+
+#left img {
+    width: 400px !important;
+}
+
+
+#logo-wrap {
+    width: 100%;
+    margin: 40px 0 0 0;
+}
+
+#logo-pp {
+    display: flex;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#title-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 0 0;
+}
+
+#title-wrap img {
+    width: 35px;
+    margin: 0 10px 0 0;
+}
+
+.content {
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+#content1,
+#content2,
+#content3,
+#content4 {
+    margin: 0 !important;
+}
+
+#content4 {
+    margin: 30px 0 0 0 !important;
+}
+
+#highlight {
+    text-align: center;
+    width: fit-content;
+    margin: 30px auto 0 auto;
+    color: #FFCC00;
+    border: 1px solid white;
+    padding: 10px 70px;
+    border-radius: 1vw;
+}
+
+@media (max-width: 1280px) {
+    #left img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 720px) {
+    #bottom {
+        display: none;
+    }
+}
+
+@media (max-width: 720px) {
+    #logo-pp {
+        width: 500px;
+        margin: 100px auto;
+    }
+
+    #title-wrap img{
+        width: 80px;
+    }
+
+    .content {
+        margin: 50px;
+    }
+
+    .main {
+        display:inline-block;
+        width: 200%;
+    }
+    
+    #left {
+        display: none;
+    }
+
+    #bottom {
+        max-width: 100% !important;
+        margin: 100px 0 ;
+    }
+
+    #right {
+        margin: 0 auto;
+    }
+
+    .robot-wrap-bottom{
+        width: 100;
+        display: flex;
+        justify-content: center;
+        margin: 30px 0 0 0;
+        padding: 0 0 100px 0 !important;
+    }
+
+    #bottom img {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    #title-wrap h1 {
+        font-size: 48px;
+    }
+
+    #content1,
+    #content2,
+    #content3,
+    #content4 {
+        font-size: 24px;
+        padding: 0 10px;
+    }
+
+    #content4 {
+        margin: 50px 0 0 0 !important ;
+    }
+
+    #highlight {
+        margin: 80px 0 0 0 !important ;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 478px) {
+    #logo-pp {
+        width: 300px;
+    }
+
+    #highlight {
+        padding: 0 auto;
+        margin: 30px 5px 0 5px;
+    }
+}
